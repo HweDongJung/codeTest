@@ -58,7 +58,7 @@ int solution(int n, vector<int> lost, vector<int> reserve)
 
 int main()
 {
-    vector<int> lost = { 3, 4 }, reserve = { 1,3,5 };
+    vector<int> lost = { 3 }, reserve = { 1,3,5 };
     int n = 5;
     cout << solution(n, lost, reserve) << endl;
 
