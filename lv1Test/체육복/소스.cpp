@@ -1,3 +1,4 @@
+﻿//https://programmers.co.kr/learn/courses/30/lessons/42862
 #include <string>
 #include <vector>
 #include <iostream>
@@ -56,11 +57,43 @@ int solution(int n, vector<int> lost, vector<int> reserve)
     return answer;
 }
 
+int student[35];
+int solution2(int n, vector<int> lost, vector<int> reserve)
+{
+    int answer = 0;
+    for (int i : reserve) student[i]++;
+    for (int i : lost) student[i]--; 
+    //student 배열의 원소 -1 : 도둑맞아서 빌려야 하는 경우, 0인경우 : 가지고 있는 경우, 1 : 본인것과 빌려줄 여분도 있는 경우
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (student[i] == -1)
+        {
+            if (student[i-1] == 1)
+            {
+                student[i - 1] = 0;
+                student[i] = 0;
+            }
+            else if (student[i + 1] == 1)
+            {
+                student[i + 1] = 0;
+                student[i] = 0;
+            }
+        }
+    }
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (student[i] >= 0) answer++;
+    }
+    return answer;
+}
+
 int main()
 {
     vector<int> lost = { 3 }, reserve = { 1,3,5 };
     int n = 5;
-    cout << solution(n, lost, reserve) << endl;
+    cout << solution2(n, lost, reserve) << endl;
 
 
 
