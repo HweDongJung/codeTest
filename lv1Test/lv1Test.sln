@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "체육복", "체육복\체�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "같은_숫자는_싫어", "같은_숫자는_싫어\같은_숫자는_싫어.vcxproj", "{3DC971CE-8983-474D-8BC4-6E9AF8E58E51}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "모의고사", "모의고사\모의고사.vcxproj", "{8A7D5593-EBC5-4875-8531-7BC52FDBC519}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{3DC971CE-8983-474D-8BC4-6E9AF8E58E51}.Release|x64.Build.0 = Release|x64
 		{3DC971CE-8983-474D-8BC4-6E9AF8E58E51}.Release|x86.ActiveCfg = Release|Win32
 		{3DC971CE-8983-474D-8BC4-6E9AF8E58E51}.Release|x86.Build.0 = Release|Win32
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Debug|x64.ActiveCfg = Debug|x64
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Debug|x64.Build.0 = Debug|x64
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Debug|x86.ActiveCfg = Debug|Win32
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Debug|x86.Build.0 = Debug|Win32
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Release|x64.ActiveCfg = Release|x64
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Release|x64.Build.0 = Release|x64
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Release|x86.ActiveCfg = Release|Win32
+		{8A7D5593-EBC5-4875-8531-7BC52FDBC519}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
