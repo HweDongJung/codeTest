@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "모의고사", "모의고�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "시저 암호", "시저 암호\시저 암호.vcxproj", "{6F72A832-167A-46B9-A7DA-4BA720A21FBE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "문자열 내 p와 y의 개수", "문자열 내 p와 y의 개수\문자열 내 p와 y의 개수.vcxproj", "{A4253BAD-DBFD-468E-8C84-16D24A73648E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{6F72A832-167A-46B9-A7DA-4BA720A21FBE}.Release|x64.Build.0 = Release|x64
 		{6F72A832-167A-46B9-A7DA-4BA720A21FBE}.Release|x86.ActiveCfg = Release|Win32
 		{6F72A832-167A-46B9-A7DA-4BA720A21FBE}.Release|x86.Build.0 = Release|Win32
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Debug|x64.ActiveCfg = Debug|x64
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Debug|x64.Build.0 = Debug|x64
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Debug|x86.ActiveCfg = Debug|Win32
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Debug|x86.Build.0 = Debug|Win32
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Release|x64.ActiveCfg = Release|x64
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Release|x64.Build.0 = Release|x64
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Release|x86.ActiveCfg = Release|Win32
+		{A4253BAD-DBFD-468E-8C84-16D24A73648E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
