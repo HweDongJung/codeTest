@@ -2,6 +2,7 @@
 
 #include <string>
 #include <vector>
+#include <algorithm>
 #include <iostream>
 
 using namespace std;
@@ -11,23 +12,30 @@ vector<int> solution(vector<int> answers)
     vector<int> answer;
     vector<int> stu1 = { 1,2,3,4,5 }, stu2 = { 2, 1, 2, 3, 2, 4, 2, 5 }, stu3 = { 3, 3, 1, 1, 2, 2, 4, 4, 5, 5 };
     int score1 = 0, score2 = 0, score3 = 0;
+    vector <int> they(3);
 
     for (int i = 0; i < answers.size(); i++)
     {
-        if (answers[i] == stu1[i % 5]) score1++;
+        if (answers[i] == stu1[i % 5]) they[0]++;
     }
 
     for (int i = 0; i < answers.size(); i++)
     {
-        if (answers[i] == stu2[i % 8]) score2++;
+        if (answers[i] == stu2[i % 8]) they[1]++;
     }
 
     for (int i = 0; i < answers.size(); i++)
     {
-        if (answers[i] == stu3[i % 10]) score3++;
+        if (answers[i] == stu3[i % 10]) they[2]++;
     }
-    
-    if (score1 > score2 && score1 > score3) answer.push_back(1);
+        
+    int max = *max_element(they.begin(), they.end());
+
+    for (int i = 0; i < 3; i++) {
+        if (they[i] == max) answer.push_back(i + 1);
+    }
+
+   /* if (score1 > score2 && score1 > score3) answer.push_back(1);
     else if (score1 < score2 && score3 < score2) answer.push_back(2);
     else if (score1 < score3 && score2 < score3) answer.push_back(3);
     else if (score1 == score2 && score1 > score3)
@@ -47,6 +55,8 @@ vector<int> solution(vector<int> answers)
         answer.push_back(1); answer.push_back(2); answer.push_back(3);
     }
 
+
+    return answer;*/
 
     return answer;
 }
