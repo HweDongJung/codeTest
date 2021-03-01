@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "수박", "수박\수박.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3진법 뒤집기", "3진법 뒤집기\3진법 뒤집기.vcxproj", "{FBA5BA15-6FA2-410C-9DBA-D6B1435F92D3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "내적", "내적\내적.vcxproj", "{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{FBA5BA15-6FA2-410C-9DBA-D6B1435F92D3}.Release|x64.Build.0 = Release|x64
 		{FBA5BA15-6FA2-410C-9DBA-D6B1435F92D3}.Release|x86.ActiveCfg = Release|Win32
 		{FBA5BA15-6FA2-410C-9DBA-D6B1435F92D3}.Release|x86.Build.0 = Release|Win32
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Debug|x64.ActiveCfg = Debug|x64
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Debug|x64.Build.0 = Debug|x64
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Debug|x86.ActiveCfg = Debug|Win32
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Debug|x86.Build.0 = Debug|Win32
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Release|x64.ActiveCfg = Release|x64
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Release|x64.Build.0 = Release|x64
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Release|x86.ActiveCfg = Release|Win32
+		{08A3FCC7-406D-4ACF-A49C-FCF61AD50D26}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
