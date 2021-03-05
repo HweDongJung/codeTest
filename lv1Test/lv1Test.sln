@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이상한 문자 만들기"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "소수 찾기", "소수 찾기\소수 찾기.vcxproj", "{FAB8BE3D-F15F-44E3-95BE-E6CF9CA56FD3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "두 정수 사이의 합", "두 정수 사이의 합\두 정수 사이의 합.vcxproj", "{9C5FB792-A223-41D6-A679-66EF23D39AB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{FAB8BE3D-F15F-44E3-95BE-E6CF9CA56FD3}.Release|x64.Build.0 = Release|x64
 		{FAB8BE3D-F15F-44E3-95BE-E6CF9CA56FD3}.Release|x86.ActiveCfg = Release|Win32
 		{FAB8BE3D-F15F-44E3-95BE-E6CF9CA56FD3}.Release|x86.Build.0 = Release|Win32
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Debug|x64.ActiveCfg = Debug|x64
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Debug|x64.Build.0 = Debug|x64
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Debug|x86.ActiveCfg = Debug|Win32
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Debug|x86.Build.0 = Debug|Win32
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Release|x64.ActiveCfg = Release|x64
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Release|x64.Build.0 = Release|x64
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Release|x86.ActiveCfg = Release|Win32
+		{9C5FB792-A223-41D6-A679-66EF23D39AB2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
