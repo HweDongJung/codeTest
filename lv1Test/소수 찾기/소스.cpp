@@ -16,11 +16,11 @@ int solution(int n)
     if (n == 2) return 1;
     else if (n == 3) return 2; //n=2,3일때의 처리가 까다로워서 걍 첨에 if문 처리 
     vector<int> sosu = {2,3}; //소수목록 
-    int answer = 2, temp;
+    int temp;
     
     for (int i = 4; i <= n; i++) //4부터 검사시작 
     {
-        if (i % 2 == 0)continue; //짝수 넘기기
+        //if (i % 2 == 0)continue; //짝수 넘기기
         temp = sqrt(i);
 
         for (int j = 0; j < sosu.size(); j++)
@@ -29,13 +29,12 @@ int solution(int n)
             else if (sosu[j] >= temp)
             {
                 sosu.push_back(i); //소수 추가
-                answer++;
                 break;
             }
         }
     }
 
-    return answer;
+    return sosu.size();
 }
 
 int main()
