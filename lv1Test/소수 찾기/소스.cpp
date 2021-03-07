@@ -37,9 +37,25 @@ int solution(int n)
     return sosu.size();
 }
 
+int solution2(int n)
+{
+    vector<bool> sosu(n + 1, true);
+    int answer = 0;
+
+    for (int i = 2; i <= n; i++)
+    {
+        if (sosu[i] == true)
+        {
+            for (int j = 2; i * j <= n; j++) sosu[j * i] = false;
+            answer++;
+        }
+    }
+    return answer;
+}
+
 int main()
 {
-    cout << solution(10) << endl;
+    cout << solution2(10) << endl;
 
     return 0;
 }
