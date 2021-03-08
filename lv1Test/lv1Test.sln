@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "두 정수 사이의 합", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "가운데 글자 가져오기", "가운데 글자 가져오기\가운데 글자 가져오기.vcxproj", "{5E51F54A-BDD8-4C3A-9E2A-CB01B99E4955}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "짝수와 홀수", "짝수와 홀수\짝수와 홀수.vcxproj", "{C1600B59-2322-4116-898C-9CBBC28E1430}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +183,14 @@ Global
 		{5E51F54A-BDD8-4C3A-9E2A-CB01B99E4955}.Release|x64.Build.0 = Release|x64
 		{5E51F54A-BDD8-4C3A-9E2A-CB01B99E4955}.Release|x86.ActiveCfg = Release|Win32
 		{5E51F54A-BDD8-4C3A-9E2A-CB01B99E4955}.Release|x86.Build.0 = Release|Win32
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Debug|x64.ActiveCfg = Debug|x64
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Debug|x64.Build.0 = Debug|x64
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Debug|x86.ActiveCfg = Debug|Win32
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Debug|x86.Build.0 = Debug|Win32
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Release|x64.ActiveCfg = Release|x64
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Release|x64.Build.0 = Release|x64
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Release|x86.ActiveCfg = Release|Win32
+		{C1600B59-2322-4116-898C-9CBBC28E1430}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
