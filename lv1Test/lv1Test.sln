@@ -53,6 +53,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "평균_구하기", "평균_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "제일 작은 수 제거하기", "제일 작은 수 제거하기\제일 작은 수 제거하기.vcxproj", "{BFC53F1A-AEFD-4204-9011-A616942E10D1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "직사각형 별찍기", "직사각형 별찍기\직사각형 별찍기.vcxproj", "{27649A08-2CD2-4104-9C2B-9A5F785CD272}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -261,6 +263,14 @@ Global
 		{BFC53F1A-AEFD-4204-9011-A616942E10D1}.Release|x64.Build.0 = Release|x64
 		{BFC53F1A-AEFD-4204-9011-A616942E10D1}.Release|x86.ActiveCfg = Release|Win32
 		{BFC53F1A-AEFD-4204-9011-A616942E10D1}.Release|x86.Build.0 = Release|Win32
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Debug|x64.ActiveCfg = Debug|x64
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Debug|x64.Build.0 = Debug|x64
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Debug|x86.ActiveCfg = Debug|Win32
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Debug|x86.Build.0 = Debug|Win32
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Release|x64.ActiveCfg = Release|x64
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Release|x64.Build.0 = Release|x64
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Release|x86.ActiveCfg = Release|Win32
+		{27649A08-2CD2-4104-9C2B-9A5F785CD272}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
