@@ -1,4 +1,4 @@
-//https://programmers.co.kr/learn/courses/30/lessons/12933
+﻿//https://programmers.co.kr/learn/courses/30/lessons/12933
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -28,9 +28,18 @@ long long solution(long long n)
     return answer; 
 }
 
+long long solution2(long long n)
+{
+    long long answer = 0;
+    string str = to_string(n);
+    sort(str.rbegin(), str.rend()); //string형은 sort를 사용할 수 있음을 이용 
+
+    return answer = stoll(str);
+}
+
 int main()
 {
-    cout << solution(118372) << endl;
+    cout << solution2(118372) << endl;
 
     return 0;
 }
