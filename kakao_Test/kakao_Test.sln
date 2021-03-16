@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "키패드누르기", "키�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "크레인_인형뽑기_게임", "크레인_인형뽑기_게임\크레인_인형뽑기_게임.vcxproj", "{B2AF1FA9-FFB1-417F-A844-3FF7E7EF04A0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "신규_아이디_추천", "신규_아이디_추천\신규_아이디_추천.vcxproj", "{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{B2AF1FA9-FFB1-417F-A844-3FF7E7EF04A0}.Release|x64.Build.0 = Release|x64
 		{B2AF1FA9-FFB1-417F-A844-3FF7E7EF04A0}.Release|x86.ActiveCfg = Release|Win32
 		{B2AF1FA9-FFB1-417F-A844-3FF7E7EF04A0}.Release|x86.Build.0 = Release|Win32
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Debug|x64.ActiveCfg = Debug|x64
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Debug|x64.Build.0 = Debug|x64
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Debug|x86.ActiveCfg = Debug|Win32
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Debug|x86.Build.0 = Debug|Win32
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Release|x64.ActiveCfg = Release|x64
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Release|x64.Build.0 = Release|x64
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Release|x86.ActiveCfg = Release|Win32
+		{AFF1F685-97C4-4260-BFBF-7747F7B9ED46}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
