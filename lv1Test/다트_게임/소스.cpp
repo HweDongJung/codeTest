@@ -4,18 +4,23 @@
 #include <cstring>
 #include <cmath>
 #include <iostream>
+#include <sstream>
+
 
 using namespace std;
 
-int bonus(char bon)
+int getBonus(char bon)
 {
     if (bon == 'S') return 1;
     else if (bon == 'D') return 2;
     else return 3;
 }
 
+
+
 int solution(string dartResult) 
 {
+    dartResult[4];
     int answer = 0;
     vector<int> score = {0,0,0,0};
     char str[10];
@@ -31,7 +36,7 @@ int solution(string dartResult)
         }
         else if (str[i] == 'S' || str[i] == 'D' || str[i] == 'T') //보너스 SDT
         {
-            score[answer - 1] = pow(score[answer - 1], bonus(str[i]));
+            score[answer - 1] = pow(score[answer - 1], getBonus(str[i]));
         }
         else //옵션
         {
@@ -55,8 +60,52 @@ int solution(string dartResult)
     answer = 0;
     for (int i = 0; i < 3; i++)
     {
-        //cout << score[i] << endl;
         answer += score[i];
+    }
+
+    return answer;
+}
+
+int solution2(string dartResult) //stringstream을 이용한 방법
+{
+    int point[3] = { 0, }, score;
+    char bonus, option;
+    int answer = 0;
+    stringstream ss(dartResult);
+
+
+    for (int i = 0; i < 3; i++)
+    {
+        ss >> score;
+        bonus = ss.get();
+        option = ss.get();
+        if (option != '*' && option != '#') ss.unget(); //option문자가 아닐경우 읽음 취소
+
+        score = pow(score, getBonus(bonus));
+        point[i] = score;
+        switch (option)
+        {
+        case '*':
+            if (i == 0)
+            {
+                point[i] *= 2;
+                break;
+            }
+            point[i] *= 2;
+            point[i - 1] *= 2;
+            break;
+        case '#':
+            point[i] *= -1;
+            break;
+        default:
+            break;
+        }
+
+    }
+
+    for (int i = 0; i < 3; i++)
+    {     
+        answer += point[i];
     }
 
     return answer;
@@ -65,7 +114,7 @@ int solution(string dartResult)
 int main()
 {
 
-    cout << solution("1D2S#10S") << endl;
+    cout << solution2("1D2S#10S") << endl;
 
     return 0;
 }
