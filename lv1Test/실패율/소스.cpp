@@ -9,11 +9,10 @@ using namespace std;
 int reach_cant[501] = { 0, }, reach[501] = { 0, }; //reach_cant 스테이지별 도달했지만 클리어 못한 플레이어, reach는 도달한 플레이어 수 
 vector<double> fail;
 
-bool cmp(int a, int b)
+bool cmp(pair <double,int> a, pair <double,int>b)
 {
-    
-    if (fail[a - 1] == fail[b - 1]) return a < b;
-    else fail[a] < fail[b];
+    if (a.first == b.first) return a.second < b.second;
+    else return a.first > b.first;
 }
 
 vector<int> solution(int N, vector<int> stages) 
@@ -60,8 +59,8 @@ vector<int> solution(int N, vector<int> stages)
 vector<int> solution2(int N, vector<int> stages) // pair, cmp를 이용한 풀이
 {
     vector<int> answer;
+    vector<pair <double, int>> pair_fail;
     int temp = 0;
-    for (int i = 0; i < N; i++) answer.push_back(i + 1);
 
     for (int i = 0; i < stages.size(); i++)
     {
@@ -83,10 +82,17 @@ vector<int> solution2(int N, vector<int> stages) // pair, cmp를 이용한 풀�
         if (reach[i] == 0) fail.push_back(0);
         else fail.push_back((double)reach_cant[i] / (double)reach[i]);
     }
-    //cout << fail[1] << endl;
+    for (int i = 0; i < N; i++)
+    {
+        pair_fail.push_back(make_pair(fail[i], i + 1)); //pair는 make_pair 함수를 이용하여 push_back함 
+    }
 
-    sort(answer.begin(), answer.end(), cmp);
+    sort(pair_fail.begin(),pair_fail.end(), cmp);
     
+    for (int i = 0; i < N; i++)
+    {
+        answer.push_back(pair_fail[i].second);
+    }
 
     return answer;
 }
