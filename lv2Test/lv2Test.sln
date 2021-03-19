@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "124_나라의_숫자", "124_나라의_숫자\124_나라의_숫자.vcxproj", "{4AB202B2-509A-449E-BDF4-B16B6EE5AF14}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "연습문제", "연습문제", "{4D5E0F84-26A4-4560-8926-6BD7182FE861}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "다리를_지나는_트럭", "다리를_지나는_트럭\다리를_지나는_트럭.vcxproj", "{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,9 +25,21 @@ Global
 		{4AB202B2-509A-449E-BDF4-B16B6EE5AF14}.Release|x64.Build.0 = Release|x64
 		{4AB202B2-509A-449E-BDF4-B16B6EE5AF14}.Release|x86.ActiveCfg = Release|Win32
 		{4AB202B2-509A-449E-BDF4-B16B6EE5AF14}.Release|x86.Build.0 = Release|Win32
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Debug|x64.ActiveCfg = Debug|x64
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Debug|x64.Build.0 = Debug|x64
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Debug|x86.Build.0 = Debug|Win32
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Release|x64.ActiveCfg = Release|x64
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Release|x64.Build.0 = Release|x64
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Release|x86.ActiveCfg = Release|Win32
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4AB202B2-509A-449E-BDF4-B16B6EE5AF14} = {4D5E0F84-26A4-4560-8926-6BD7182FE861}
+		{D1C25D0F-2439-4AD5-8A6E-8C6A32B8A65A} = {4D5E0F84-26A4-4560-8926-6BD7182FE861}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {628046B7-1289-4F26-8B62-27B2B7DAEE8F}
