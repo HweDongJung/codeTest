@@ -1,4 +1,4 @@
-#include <string>
+ï»¿#include <string>
 #include <vector>
 #include <iostream>
 #include <utility>
@@ -18,26 +18,26 @@ int main()
 
 int solution(int bridge_length, int weight, vector<int> truck_weights) 
 {
-    int answer = 0; // ½Ã°£ °æ°ú¸¦ Ç¥½ÃÇÏ´Â º¯¼ö
-    vector<pair<int, int>> truck_pair; // Ã¹¹øÂ° int´Â Æ¯Á¤ Æ®·°ÀÇ ¹«°Ô, µÎ¹øÂ° int´Â Áö³ª°£ ±æÀÌ
-    vector<int> reach_truck, trucks = truck_weights; //reach_truck = µµÂøÇÑ Æ®·°¸ñ·Ï
+    int answer = 0; // ì‹œê°„ ê²½ê³¼ë¥¼ í‘œì‹œí•˜ëŠ” ë³€ìˆ˜
+    vector<pair<int, int>> truck_pair; // ì²«ë²ˆì§¸ intëŠ” íŠ¹ì • íŠ¸ëŸ­ì˜ ë¬´ê²Œ, ë‘ë²ˆì§¸ intëŠ” ì§€ë‚˜ê°„ ê¸¸ì´
+    vector<int> reach_truck, trucks = truck_weights; //reach_truck = ë„ì°©í•œ íŠ¸ëŸ­ëª©ë¡
 
     for (;;)
     {
-        answer++;//½Ã°£ °æ°ú 
+        answer++;//ì‹œê°„ ê²½ê³¼ 
         
-        if (truck_pair.size() != 0 && truck_pair[0].second == bridge_length) //¸ÕÀú ´Ù¸®¿¡ ÀÖ´Â Æ®·°ÀÌ ±æÀÌ¸¸Å­ °¬´Ù¸é pop ÇÏ°í ´Ù¸®¸¦ Áö³­ Æ®·° vector·Î push
+        if (truck_pair.size() != 0 && truck_pair[0].second == bridge_length) //ë¨¼ì € ë‹¤ë¦¬ì— ìˆëŠ” íŠ¸ëŸ­ì´ ê¸¸ì´ë§Œí¼ ê°”ë‹¤ë©´ pop í•˜ê³  ë‹¤ë¦¬ë¥¼ ì§€ë‚œ íŠ¸ëŸ­ vectorë¡œ push
         {
             reach_truck.push_back(truck_pair[0].first); 
             truck_pair.erase(truck_pair.begin()+0);
         }
-        if (reach_truck.size() == truck_weights.size()) break;//Æ®·° ´Ù µµÂøÇßÀ¸¸é for¹® Å»Ãâ
-        else
+        if (reach_truck.size() == truck_weights.size()) break;//íŠ¸ëŸ­ ë‹¤ ë„ì°©í–ˆìœ¼ë©´ forë¬¸ íƒˆì¶œ
+        else //ì•„ë‹ˆë©´ ë‹¤ë¦¬ìœ„ íŠ¸ëŸ­ ì „ë¶€ ê±´ë„ˆê°„ ê¸¸ì´ +1
         {
             for (int i = 0; i < truck_pair.size(); i++) truck_pair[i].second ++;
         }
 
-        if (trucks.size() != 0 && canCross(truck_pair, weight, trucks[0]))//´Ù¸®ÀÇ ¹«°Ô¿Í µé¾î°¡·Á´Â Æ®·° ¹«°Ô ºñ±³
+        if (trucks.size() != 0 && canCross(truck_pair, weight, trucks[0]))//ë‹¤ë¦¬ì˜ ë¬´ê²Œì™€ ë“¤ì–´ê°€ë ¤ëŠ” íŠ¸ëŸ­ ë¬´ê²Œ ë¹„êµ
         {
             truck_pair.push_back(make_pair(trucks[0], 1));
             trucks.erase(trucks.begin() + 0);
@@ -47,11 +47,11 @@ int solution(int bridge_length, int weight, vector<int> truck_weights)
     return answer;
 }
 
-bool canCross(vector<pair<int, int>> truck_pair, int weight, int truck_weight) //weight = ´Ù¸®°¡ °ßµô ¼ö ÀÖ´Â ÃÖ´ë¹«°Ô 
+bool canCross(vector<pair<int, int>> truck_pair, int weight, int truck_weight) //weight = ë‹¤ë¦¬ê°€ ê²¬ë”œ ìˆ˜ ìˆëŠ” ìµœëŒ€ë¬´ê²Œ 
 {
     int weights=0;
     for (int i = 0; i < truck_pair.size(); i++) weights += truck_pair[i].first;
-    if (weight - weights >= truck_weight) return true; //´Ù¸®ÀÇ ÇÑµµ¹«°Ô - ÇöÀç ´Ù¸®À§ Æ®·°µéÀÇ ¹«°Ô >= ´Ù¸® µé¾î¿À·Á´Â Æ®·°ÀÇ ¹«°Ô¶ó¸é °¡´É
+    if (weight - weights >= truck_weight) return true; //ë‹¤ë¦¬ì˜ í•œë„ë¬´ê²Œ - í˜„ì¬ ë‹¤ë¦¬ìœ„ íŠ¸ëŸ­ë“¤ì˜ ë¬´ê²Œ >= ë‹¤ë¦¬ ë“¤ì–´ì˜¤ë ¤ëŠ” íŠ¸ëŸ­ì˜ ë¬´ê²Œë¼ë©´ ê°€ëŠ¥
     else return false;
 
 }
