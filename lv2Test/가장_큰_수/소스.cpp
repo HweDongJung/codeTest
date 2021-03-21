@@ -9,7 +9,7 @@ using namespace std;
 
 bool cmp1(int a, int b)
 {
-    return stoi(to_string(a) + to_string(b)) > stoi(to_string(b) + to_string(a));
+    return to_string(a) + to_string(b) > to_string(b) + to_string(a);
 }
 
 string solution(vector<int> numbers)
@@ -26,9 +26,8 @@ string solution(vector<int> numbers)
 int main()
 {
     vector<int> a = { 30,303 };
-    sort(a.begin(), a.end(), cmp1);
-    for (int i=0; i < a.size(); i++)cout << a[i];
-    //cout << solution({303,30}) << endl;
+   
+    cout << solution({ 3, 30, 34, 5, 9 }) << endl;
 
     return 0;
 }
