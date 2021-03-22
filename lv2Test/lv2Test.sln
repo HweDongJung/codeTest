@@ -25,6 +25,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "더 맵게", "더 맵게\�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "H-Index", "H-Index\H-Index.vcxproj", "{97D087A1-D4F9-4CF9-B1D1-ACA5B069DBC3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "그 외 기출", "그 외 기출", "{694EEC5E-D14B-434C-897C-A2B3108DE2F9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스킬트리", "스킬트리\스킬트리.vcxproj", "{13787939-E8E5-43F5-B41A-4502CE2AE41E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -113,6 +117,14 @@ Global
 		{97D087A1-D4F9-4CF9-B1D1-ACA5B069DBC3}.Release|x64.Build.0 = Release|x64
 		{97D087A1-D4F9-4CF9-B1D1-ACA5B069DBC3}.Release|x86.ActiveCfg = Release|Win32
 		{97D087A1-D4F9-4CF9-B1D1-ACA5B069DBC3}.Release|x86.Build.0 = Release|Win32
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Debug|x64.ActiveCfg = Debug|x64
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Debug|x64.Build.0 = Debug|x64
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Debug|x86.ActiveCfg = Debug|Win32
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Debug|x86.Build.0 = Debug|Win32
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Release|x64.ActiveCfg = Release|x64
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Release|x64.Build.0 = Release|x64
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Release|x86.ActiveCfg = Release|Win32
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -128,6 +140,7 @@ Global
 		{E64AA6CD-0A71-4295-8415-85D1CB9BC6BF} = {4D5E0F84-26A4-4560-8926-6BD7182FE861}
 		{BE4956EF-DC0A-4660-99DE-ADECE7D2C102} = {4D5E0F84-26A4-4560-8926-6BD7182FE861}
 		{97D087A1-D4F9-4CF9-B1D1-ACA5B069DBC3} = {4D5E0F84-26A4-4560-8926-6BD7182FE861}
+		{13787939-E8E5-43F5-B41A-4502CE2AE41E} = {694EEC5E-D14B-434C-897C-A2B3108DE2F9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {628046B7-1289-4F26-8B62-27B2B7DAEE8F}
