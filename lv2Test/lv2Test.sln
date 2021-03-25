@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "파일명 정렬", "파일�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "숫자의_표현", "숫자의_표현\숫자의_표현.vcxproj", "{EAFA6155-0D9D-47A4-B3C0-F89BCCEA99FD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "튜플", "튜플\튜플.vcxproj", "{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -177,6 +179,14 @@ Global
 		{EAFA6155-0D9D-47A4-B3C0-F89BCCEA99FD}.Release|x64.Build.0 = Release|x64
 		{EAFA6155-0D9D-47A4-B3C0-F89BCCEA99FD}.Release|x86.ActiveCfg = Release|Win32
 		{EAFA6155-0D9D-47A4-B3C0-F89BCCEA99FD}.Release|x86.Build.0 = Release|Win32
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Debug|x64.ActiveCfg = Debug|x64
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Debug|x64.Build.0 = Debug|x64
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Debug|x86.ActiveCfg = Debug|Win32
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Debug|x86.Build.0 = Debug|Win32
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Release|x64.ActiveCfg = Release|x64
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Release|x64.Build.0 = Release|x64
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Release|x86.ActiveCfg = Release|Win32
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -198,6 +208,7 @@ Global
 		{69F0B0FC-CF03-4CC5-A599-E1899758777E} = {7329405B-93BE-4E05-8628-4B7BEEF167AF}
 		{D2E53CF3-C35C-4613-A636-C6337031C2E6} = {7329405B-93BE-4E05-8628-4B7BEEF167AF}
 		{EAFA6155-0D9D-47A4-B3C0-F89BCCEA99FD} = {4D5E0F84-26A4-4560-8926-6BD7182FE861}
+		{4ADEA8F8-FDB0-4856-9404-FCF23A61041E} = {7329405B-93BE-4E05-8628-4B7BEEF167AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {628046B7-1289-4F26-8B62-27B2B7DAEE8F}
